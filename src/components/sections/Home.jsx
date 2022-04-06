@@ -3,7 +3,6 @@ import styled from "styled-components";
 import CoverVideo from "../CoverVideo";
 import TypeWriterText from "../TypeWriterText";
 import RoundTextBlack from "../../assets/Rounded-Text-Black.png";
-import RoundTextWhite from "../../assets/Rounded-Text-White.png";
 import { keyframes } from "styled-components";
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
 
         <RoundText>
           <Circle>&#x2193;</Circle>
-          <img src={RoundTextBlack} alt="NFT" />
+          <img src={RoundTextBlack} alt="" />
         </RoundText>
       </Container>
     </Section>

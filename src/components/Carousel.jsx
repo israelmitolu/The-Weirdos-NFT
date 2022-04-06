@@ -6,8 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 // import required modules
-import { EffectCards } from "swiper";
+import { EffectCards, Pagination, Navigation, Autoplay } from "swiper";
 
 import img1 from "../assets/Nfts/bighead.svg";
 import img2 from "../assets/Nfts/bighead-1.svg";
@@ -20,13 +23,26 @@ import img8 from "../assets/Nfts/bighead-7.svg";
 import img9 from "../assets/Nfts/bighead-8.svg";
 import img10 from "../assets/Nfts/bighead-9.svg";
 
+import Arrow from "../assets/Arrow.svg";
+
 const Carousel = () => {
   return (
     <Container>
       <Swiper
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          type: "fraction",
+        }}
+        scrollbar={{
+          draggable: true,
+        }}
+        navigation={true}
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards]}
+        modules={[EffectCards, Pagination, Navigation, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -74,6 +90,39 @@ const Container = styled.div`
 
     &-slide {
       background-color: ${(props) => props.theme.carouselColor};
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-button-next {
+      width: 4rem;
+      right: 0;
+      top: 60%;
+      color: ${(props) => props.theme.text};
+      background-image: url(${Arrow});
+      background-position: center;
+      background-size: cover;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &-button-prev {
+      width: 4rem;
+      left: 0;
+      top: 60%;
+      color: ${(props) => props.theme.text};
+      transform: rotate(180deg);
+      background-image: url(${Arrow});
+      background-position: center;
+      background-size: cover;
+
+      &::after {
+        display: none;
+      }
     }
   }
 `;

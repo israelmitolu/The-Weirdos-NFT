@@ -21,7 +21,7 @@ const TypeWriterText = () => {
               .typeString(`<span class="text-2">Collectibles.</span>`)
               .pauseFor(2000)
               .deleteAll()
-              .typeString(`<span class="text-3">Apes.</span>`)
+              .typeString(`<span class="text-3">Ape Killers!</span>`)
               .pauseFor(2000)
               .deleteAll()
               .start();
