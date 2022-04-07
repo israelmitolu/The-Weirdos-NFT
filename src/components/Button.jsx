@@ -1,20 +1,17 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Button = ({ text, link }) => {
   return (
-    <Link>
-      <Btn>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={text}
-        >
-          {text}
-        </a>
-      </Btn>
-    </Link>
+    <Btn>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={text}
+      >
+        {text}
+      </a>
+    </Btn>
   );
 };
 
