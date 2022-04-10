@@ -2,16 +2,9 @@ import styled from "styled-components";
 
 const Button = ({ text, link }) => {
   return (
-    <Btn>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={text}
-      >
-        {text}
-      </a>
-    </Btn>
+    <a href={link} aria-label={text} target="_blank" rel="noreferrer" >
+       <Btn>{text}</Btn>
+    </a>
   );
 };
 
