@@ -52,27 +52,27 @@ const Roadmap = () => {
           <RoadmapItem
             addToRefs={addToRefs}
             title="Grand Opening"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            subtext="Join us for the grand opening of our new project. Expect surprises and exclusive content."
           />
           <RoadmapItem
             addToRefs={addToRefs}
             title="Great Benefits"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            subtext="Enjoy exclusive benefits as a member of our community. From special events to early access to new features."
           />
           <RoadmapItem
             addToRefs={addToRefs}
             title="Early Access"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            subtext="Get early access to our new releases and updates. Be the first to experience our latest innovations."
           />
           <RoadmapItem
             addToRefs={addToRefs}
             title="New Merch"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            subtext="Check out our new merchandise collection. Exclusive designs and high-quality materials."
           />
           <RoadmapItem
             addToRefs={addToRefs}
             title="Holders Ranking"
-            subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            subtext="Participate in our holders ranking for a chance to win exclusive rewards and recognition."
           />
         </Items>
       </Container>
